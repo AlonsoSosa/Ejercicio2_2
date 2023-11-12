@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             x:Class="Ejercicio2_2.MainPage"
+             Title="Grupo 2 Firma" BackgroundColor="White">
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+        <mct:DrawingView
+                x:Name="drawingView"
+                BackgroundColor="White"
+                WidthRequest="200"
+                HeightRequest="200"
+                HorizontalOptions="Center"/>
+
+        <Entry x:Name="txtDescripcion" Placeholder="Descripción" Margin="0,0,0,10"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnGuardar" Text="Guardar Firma" Clicked="btnGuardar_Clicked" BackgroundColor="Green" TextColor="White" Margin="10,0,10,0" />
+            <Button x:Name="btnLista" Text="Ver Firmas Guardas" Clicked="btnLista_Clicked" BackgroundColor="Aqua" TextColor="White" Margin="60,0,10,0"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
